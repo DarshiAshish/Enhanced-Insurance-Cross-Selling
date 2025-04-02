@@ -19,6 +19,6 @@ jobs:
           cat metrics.txt >> report.md
 
           echo "## Data Visulaization"
-          cml-comment feature_importance.png --md >> report.md
+          cml comment feature_importance.png --md >> report.md
           
           cml-comment-create report.md
