@@ -17,8 +17,5 @@ jobs:
 
           echo "## Model Metrics" > report.md
           cat metrics.txt >> report.md
-
-          echo "## Data Visulaization"
-          echo "![](feature_importance.png)" >> report.md
           
           cml comment create report.md
