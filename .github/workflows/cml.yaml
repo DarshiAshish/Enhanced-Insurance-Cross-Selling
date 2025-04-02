@@ -19,7 +19,6 @@ jobs:
           cat metrics.txt >> report.md
 
           echo "## Data Visulaization"
-          cml comment create "![Feature Importance](feature_importance.png)"
-          echo "![Feature Importance](feature_importance.png)" >> report.md
+          echo "![](./feature_importance.png)" >> report.md
           
           cml comment create report.md
