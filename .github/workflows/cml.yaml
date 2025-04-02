@@ -10,6 +10,8 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          cd Enhanced-Insurance-Cross-Selling
+          pwd
           pip install -r requirements.txt
           python train.py
 
